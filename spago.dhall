@@ -2,15 +2,11 @@
 , dependencies =
   [ "console"
   , "effect"
-  , "express"
   , "generics-rep"
-  , "node-fs-aff"
-  , "node-process"
-  , "node-url"
   , "prelude"
   , "psci-support"
   ]
-, source =
+, sources =
   [ "src/**/*.purs"
   ]
 , packages = ./packages.dhall

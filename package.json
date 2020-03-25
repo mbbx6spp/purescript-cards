@@ -1,15 +1,13 @@
 {
-  "name": "hello-express",
+  "name": "hello-purescript",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "description": "A simple PureScript app, instantly up and running.",
+  "main": "output/Main/index.js",
   "scripts": {
-    "start": "node server.js",
-    "prepare": "npm install && npx spago build"
+    "start": "node output/Main/index.js",
+    "build": "npx spago build"
   },
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "purescript": "^0.13.6",
     "spago": "^0.14.0"
