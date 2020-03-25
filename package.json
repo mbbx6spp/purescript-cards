@@ -1,22 +1,21 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepare": "npm install && npx spago build"
   },
   "dependencies": {
-    "bower": "^1.8.4",
-    "express": "^4.16.4",
-    "pulp": "^12.3.0",
-    "purescript": "^0.12.1"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "purescript": "^0.13.6",
+    "spago": "*"
   },
   "engines": {
-    "node": "8.x"
+    "node": "12.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
