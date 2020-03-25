@@ -12,10 +12,10 @@
   },
   "devDependencies": {
     "purescript": "^0.13.6",
-    "spago": "*"
+    "spago": "^0.14.0"
   },
   "engines": {
-    "node": "12.x"
+    "node": "12.0.0"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
