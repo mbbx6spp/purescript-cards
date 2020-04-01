@@ -1,11 +1,11 @@
-module Main where
+module Frontend where
 
-import Prelude
+import Data.Unit (Unit)
+import Data.Show (class Show)
 import Effect (Effect)
 import Data.Generic.Rep (class Generic)
 import Data.Generic.Rep.Show (genericShow)
 import Effect.Console (log)
-
 
 data Suit = Hearts | Diamonds | Spades | Clubs
 

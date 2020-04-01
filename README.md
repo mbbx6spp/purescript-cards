@@ -10,10 +10,10 @@ On the front-end,
 - the PureScript code transpiles to Javascript in the `output/` directory.
 
 On the back-end,
-- your app starts at `src/`
-- add frameworks and packages in `package.json`
+- your app starts at `src/Backend.purs`
+- add JavaScript dependencies and scripts in `package.json`
+- add PureScript dependencies in `spago.dhall`
 - safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
 
 Made by [Glitch](https://glitch.com/)
 -------------------
