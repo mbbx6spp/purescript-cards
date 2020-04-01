@@ -4,13 +4,16 @@
   "description": "A simple PureScript app, instantly up and running.",
   "main": "output/Main/index.js",
   "scripts": {
-    "start": "node output/Main/index.js",
-    "build": "npx spago build"
+    "start": "node output/Cards.Backend/index.js",
+    "prepare": "spago build"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
+    "postcss": "^7.0.27",
     "purescript": "^0.13.6",
-    "spago": "^0.14.0"
+    "spago": "^0.14.0",
+    "tailwind": "^4.0.0"
   },
   "engines": {
     "node": "12.0.0"

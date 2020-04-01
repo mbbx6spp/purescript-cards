@@ -1,4 +1,4 @@
-module Backend (main) where
+module Cards.Backend (main) where
 
 import Data.Unit (Unit)
 import Effect (Effect)
