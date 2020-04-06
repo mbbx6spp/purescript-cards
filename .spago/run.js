@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('../output/Test.Main').main()
+require('../output/Cards.Backend').main()
