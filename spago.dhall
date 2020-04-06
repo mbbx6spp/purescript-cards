@@ -2,6 +2,7 @@
 , dependencies =
   [ "console"
   , "effect"
+  , "express"
   , "generics-rep"
   , "prelude"
   , "psci-support"
