@@ -1,8 +1,9 @@
 module Cards.Common where
 
+import Data.Show (class Show)
+
 import Data.Generic.Rep (class Generic)
 import Data.Generic.Rep.Show (genericShow)
-import Effect.Console (log)
 
 data Suit = Hearts | Diamonds | Spades | Clubs
 
