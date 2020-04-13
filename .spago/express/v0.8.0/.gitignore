@@ -1,9 +1,0 @@
-bower_components
-node_modules
-.psci
-.psci_modules
-output
-docs/**/Internal
-*.tix
-pursuit.json
-package-lock.json
