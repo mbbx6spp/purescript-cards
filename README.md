@@ -27,6 +27,8 @@ If you are starting with this project you should check the following:
 - load the Nix shell without error
 - run `node --version` and get back 12.15.0
 - run `yarn versions` and get back a list of all the versions relied upon by yarn
+- run `yarn install --dev` will install your project dependencies including dev dependencies under `node_modules/`
+- run `yarn build` will compile your `.purs` files under `src/` and output JavaScript to the `output/` directory.
 - run `yarn ~build` and change a .purs file under `src/` then see it rerun upon file save
 - run `yarn test` which will run on single run of the stubbed out test suite (defined in `test/Main.purs`)
 - run `yarn ~test` which will run in a loop and rerun test suite when files under `test/` or `src/` change
