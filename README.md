@@ -15,7 +15,3 @@ On the back-end,
 - add PureScript dependencies in `spago.dhall`
 - safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
