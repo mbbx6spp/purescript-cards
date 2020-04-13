@@ -15,3 +15,8 @@ On the back-end,
 - add PureScript dependencies in `spago.dhall`
 - safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
+## Yarn scripts
+
+- `~build`: will in a forever loop build using the purescript compiler whenever any `.purs` or `.js` files change under `src/`
+- `~test`: will in a forever loop run stubbed out tests via `spago test` whenever any `.purs` or `.js` files changes under `test/`
+- `server`: will run the backend server on port 8080 
