@@ -1,10 +1,11 @@
 module Test.Main where
 
+import Prelude (discard)
 import Data.Function (($))
 import Data.Unit (Unit)
 import Effect (Effect)
 import Effect.Aff (launchAff_)
-import Test.Spec (describe, it, pending)
+import Test.Spec (describe, pending)
 import Test.Spec.Reporter.Console (consoleReporter)
 import Test.Spec.Runner (runSpec)
 

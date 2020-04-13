@@ -7,3 +7,13 @@
 /.psc*
 /.purs*
 /.psa*
+.viminfo
+.npm/
+.node-gyp
+.local/
+.config/
+yarn-error.log
+.cache/
+.env
+output/
+.spago/
