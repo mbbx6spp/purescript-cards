@@ -4,7 +4,7 @@
   "description": "A simple PureScript app, instantly up and running.",
   "main": "output/Main/index.js",
   "scripts": {
-    "start": "node output/Cards.Backend/index.js",
+    "server": "node src/server.js",
     "prepare": "spago build",
     "test": "spago test",
     "~build": "find src/ -name '*.purs' -o -name '*.js' | entr -s 'spago build'",
