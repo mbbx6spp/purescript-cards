@@ -7,7 +7,7 @@
     "server": "node src/server.js",
     "prepare": "spago build",
     "build": "spago build",
-    "test": "spago test",
+    "test": "spago -x test.dhall test",
     "~build": "find src/ -name '*.purs' -o -name '*.js' | entr -s 'spago build'",
     "~test": "find src/ test/ -name '*.purs' -o -name '*.js' | entr -s 'spago -x test.dhall test'"
   },
