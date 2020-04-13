@@ -19,4 +19,15 @@ On the back-end,
 
 - `~build`: will in a forever loop build using the purescript compiler whenever any `.purs` or `.js` files change under `src/`
 - `~test`: will in a forever loop run stubbed out tests via `spago test` whenever any `.purs` or `.js` files changes under `test/`
-- `server`: will run the backend server on port 8080 
+- `server`: will run the backend server on port 8080
+
+## On-boarding tests
+
+If you are starting with this project you should check the following:
+- load the Nix shell without error
+- run `node --version` and get back 12.15.0
+- run `yarn versions` and get back a list of all the versions relied upon by yarn
+- run `yarn ~build` and change a .purs file under `src/` then see it rerun upon file save
+- run `yarn test` which will run on single run of the stubbed out test suite (defined in `test/Main.purs`)
+- run `yarn ~test` which will run in a loop and rerun test suite when files under `test/` or `src/` change
+- run `yarn server` which will run a HTTP server - the `Cards.Backend` module main - bound to port 8080.

@@ -8,7 +8,7 @@
     "prepare": "spago build",
     "test": "spago test",
     "~build": "find src/ -name '*.purs' -o -name '*.js' | entr -s 'spago build'",
-    "~test": "find test/ -name '*.purs' -o -name '*.js' | entr -s 'spago -x test.dhall test'"
+    "~test": "find src/ test/ -name '*.purs' -o -name '*.js' | entr -s 'spago -x test.dhall test'"
   },
   "dependencies": {},
   "devDependencies": {
