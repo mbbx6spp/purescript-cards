@@ -4,10 +4,15 @@
   "description": "A simple PureScript app, instantly up and running.",
   "main": "output/Main/index.js",
   "scripts": {
-    "server": "node src/server.js",
+    "server": "node dist/express.js",
     "prepare": "spago build",
     "build": "spago build",
     "test": "spago -x test.dhall test",
+    "prebundle": "npm run-script prepare && mkdir -p dist/ && rm -f dist/*.js",
+    "bundle:express": "spago bundle-app -m 'Cards.Backend.Express' --to dist/express.js",
+    "bundle:lambda": "spago bundle-module -m 'Cards.Backend.Lambda' --to dist/lambda.js",
+    "bundle:frontend": "spago bundle-app -m 'Cards.Frontend' --to dist/client.js",
+    "bundle": "yarn bundle:express && yarn bundle:lambda && yarn bundle:frontend",
     "@build": "find src/ -name '*.purs' -o -name '*.js' | entr -s 'spago build'",
     "@test": "find src/ test/ -name '*.purs' -o -name '*.js' | entr -s 'spago -x test.dhall test'"
   },

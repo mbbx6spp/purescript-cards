@@ -1,9 +1,15 @@
-module Cards.Common where
+module Cards.Common
+       ( Suit (..)
+       , CardColor (..)
+       , Rank (..)
+       , Card
+       , Deck
+       ) where
 
-import Data.Show (class Show)
-
+import Data.List (List, (:))
 import Data.Generic.Rep (class Generic)
 import Data.Generic.Rep.Show (genericShow)
+import Data.Show (class Show)
 
 data Suit = Hearts | Diamonds | Spades | Clubs
 
@@ -33,3 +39,14 @@ data Rank
 derive instance genericRank :: Generic Rank _
 instance showRank :: Show Rank where show = genericShow
 
+data Card = MkCard { rank :: Rank, suit :: Suit }
+derive instance genericCard :: Generic Card _
+instance showCard :: Show Card where show = genericShow
+
+-- | Produce `CardColor` for a given `Suit`
+cardColor :: Suit -> CardColor
+cardColor Hearts   = Red
+cardColor Diamonds = Red
+cardColor _        = Black
+
+type Deck = List Card
