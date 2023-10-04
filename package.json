@@ -18,7 +18,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "postcss": "^7.0.27",
+    "postcss": "^8.4.31",
     "tailwind": "^4.0.0"
   },
   "resolutions": {
